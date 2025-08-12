@@ -50,19 +50,19 @@ const CategoryGrid = ({ categories }) => {
           animate="show"
           className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6"
         >
-          {categories.map((category) => (
+{categories?.map((category, index) => (
             <motion.div
-              key={category.id}
+              key={category?.id || `category-${index}`}
               variants={item}
               whileHover={{ y: -8, scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => navigate(`/category/${category.id}`)}
+              onClick={() => category?.id && navigate(`/category/${category.id}`)}
               className="group cursor-pointer"
             >
               <div className="bg-surface rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 text-center space-y-4">
                 <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl flex items-center justify-center mx-auto group-hover:from-primary group-hover:to-secondary transition-all duration-300">
                   <ApperIcon 
-                    name={category.icon} 
+                    name={category?.icon || 'folder'} 
                     size={32} 
                     className="text-primary group-hover:text-white transition-colors duration-300"
                   />
@@ -70,15 +70,15 @@ const CategoryGrid = ({ categories }) => {
                 
                 <div>
                   <h3 className="font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">
-                    {language === "ur" ? category.name_ur : category.name_en}
+                    {language === "ur" ? (category?.name_ur || 'نامعلوم') : (category?.name_en || 'Unknown')}
                   </h3>
                   <p className="text-sm text-gray-500 mt-1">
-                    {category.productCount || 0} {language === "ur" ? "مصنوعات" : "products"}
+                    {category?.productCount || 0} {language === "ur" ? "مصنوعات" : "products"}
                   </p>
                 </div>
               </div>
             </motion.div>
-          ))}
+          )) || <div className="col-span-full text-center py-8 text-gray-500">No categories available</div>}
         </motion.div>
       </div>
     </section>
