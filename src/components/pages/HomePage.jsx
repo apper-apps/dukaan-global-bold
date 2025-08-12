@@ -4,6 +4,7 @@ import { productService } from "@/services/api/productService";
 import { categoryService } from "@/services/api/categoryService";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import ApperIcon from "@/components/ApperIcon";
 import ProductGrid from "@/components/organisms/ProductGrid";
 import HeroSection from "@/components/organisms/HeroSection";
 import CategoryGrid from "@/components/organisms/CategoryGrid";
