@@ -1,0 +1,280 @@
+[
+  {
+    "Id": 1,
+    "title_en": "Premium Wireless Headphones",
+    "title_ur": "پریمیم وائرلیس ہیڈفونز",
+    "description_en": "High-quality wireless headphones with noise cancellation and premium audio quality.",
+    "description_ur": "اعلیٰ معیار کے وائرلیس ہیڈفونز جن میں شور ختم کرنے کی سہولت اور بہترین آواز کا معیار ہے۔",
+    "price": 8500,
+    "originalPrice": 12000,
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=600&h=600&fit=crop"
+    ],
+    "category_id": "1",
+    "stock": 25,
+    "featured": true,
+    "badges": [
+      { "type": "accent", "label_en": "Sale", "label_ur": "سیل" },
+      { "type": "primary", "label_en": "Premium", "label_ur": "پریمیم" }
+    ],
+    "specifications": {
+      "Brand": "TechSound",
+      "Connectivity": "Bluetooth 5.0",
+      "Battery Life": "30 hours",
+      "Noise Cancellation": "Active"
+    },
+    "created_at": "2024-01-15T10:00:00Z"
+  },
+  {
+    "Id": 2,
+    "title_en": "Smart Fitness Watch",
+    "title_ur": "اسمارٹ فٹنیس واچ",
+    "description_en": "Advanced fitness tracking smartwatch with heart rate monitor and GPS.",
+    "description_ur": "ایڈوانس فٹنیس ٹریکنگ اسمارٹ واچ جس میں دل کی رفتار کی جانچ اور GPS ہے۔",
+    "price": 15000,
+    "originalPrice": 15000,
+    "images": [
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=600&h=600&fit=crop"
+    ],
+    "category_id": "1",
+    "stock": 18,
+    "featured": true,
+    "badges": [
+      { "type": "success", "label_en": "New", "label_ur": "نیا" }
+    ],
+    "specifications": {
+      "Display": "1.4 inch AMOLED",
+      "Battery Life": "7 days",
+      "Water Resistance": "50M",
+      "Health Sensors": "Heart Rate, SpO2"
+    },
+    "created_at": "2024-01-20T14:30:00Z"
+  },
+  {
+    "Id": 3,
+    "title_en": "Designer Cotton Kurta",
+    "title_ur": "ڈیزائنر کاٹن کُرتا",
+    "description_en": "Elegant designer cotton kurta perfect for casual and formal occasions.",
+    "description_ur": "خوبصورت ڈیزائنر کاٹن کُرتا جو آرام دہ اور رسمی مواقع کے لیے بہترین ہے۔",
+    "price": 3500,
+    "originalPrice": 4500,
+    "images": [
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1583743089695-4b142b6e0582?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=600&h=600&fit=crop"
+    ],
+    "category_id": "2",
+    "stock": 32,
+    "featured": false,
+    "badges": [
+      { "type": "warning", "label_en": "Limited", "label_ur": "محدود" }
+    ],
+    "specifications": {
+      "Material": "100% Cotton",
+      "Fit": "Regular",
+      "Care": "Machine Wash",
+      "Origin": "Pakistan"
+    },
+    "created_at": "2024-01-18T09:15:00Z"
+  },
+  {
+    "Id": 4,
+    "title_en": "Organic Green Tea Set",
+    "title_ur": "آرگینک گرین ٹی سیٹ",
+    "description_en": "Premium organic green tea collection with natural antioxidants and health benefits.",
+    "description_ur": "پریمیم آرگینک گرین ٹی کا مجموعہ جس میں قدرتی اینٹی آکسیڈنٹس اور صحت کے فوائد ہیں۔",
+    "price": 2800,
+    "originalPrice": 2800,
+    "images": [
+      "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=600&h=600&fit=crop"
+    ],
+    "category_id": "7",
+    "stock": 45,
+    "featured": true,
+    "badges": [
+      { "type": "success", "label_en": "Organic", "label_ur": "آرگینک" },
+      { "type": "primary", "label_en": "Healthy", "label_ur": "صحت مند" }
+    ],
+    "specifications": {
+      "Type": "Green Tea",
+      "Weight": "200g",
+      "Origin": "Ceylon",
+      "Caffeine": "Low"
+    },
+    "created_at": "2024-01-22T16:45:00Z"
+  },
+  {
+    "Id": 5,
+    "title_en": "Leather Executive Bag",
+    "title_ur": "چمڑے کا ایگزیکٹو بیگ",
+    "description_en": "Genuine leather executive bag perfect for office and business meetings.",
+    "description_ur": "اصلی چمڑے کا ایگزیکٹو بیگ جو آفس اور کاروباری میٹنگز کے لیے بہترین ہے۔",
+    "price": 12500,
+    "originalPrice": 16000,
+    "images": [
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600&h=600&fit=crop"
+    ],
+    "category_id": "2",
+    "stock": 8,
+    "featured": true,
+    "badges": [
+      { "type": "accent", "label_en": "Sale", "label_ur": "سیل" },
+      { "type": "primary", "label_en": "Genuine Leather", "label_ur": "اصلی چمڑا" }
+    ],
+    "specifications": {
+      "Material": "Genuine Leather",
+      "Dimensions": "40x30x12 cm",
+      "Compartments": "3 main + 5 small",
+      "Color": "Brown"
+    },
+    "created_at": "2024-01-25T11:20:00Z"
+  },
+  {
+    "Id": 6,
+    "title_en": "Smart Home Security Camera",
+    "title_ur": "اسمارٹ ہوم سیکیورٹی کیمرا",
+    "description_en": "WiFi enabled security camera with night vision and mobile app control.",
+    "description_ur": "وائی فائی کے ساتھ سیکیورٹی کیمرا جس میں رات کی بینائی اور موبائل ایپ کنٹرول ہے۔",
+    "price": 7500,
+    "originalPrice": 7500,
+    "images": [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1593081462995-f7b461e2d24c?w=600&h=600&fit=crop"
+    ],
+    "category_id": "3",
+    "stock": 15,
+    "featured": false,
+    "badges": [
+      { "type": "info", "label_en": "WiFi", "label_ur": "وائی فائی" },
+      { "type": "success", "label_en": "HD Quality", "label_ur": "HD معیار" }
+    ],
+    "specifications": {
+      "Resolution": "1080p Full HD",
+      "Night Vision": "Up to 30ft",
+      "Storage": "Cloud + SD Card",
+      "Connectivity": "WiFi 2.4GHz"
+    },
+    "created_at": "2024-01-28T13:10:00Z"
+  },
+  {
+    "Id": 7,
+    "title_en": "Premium Rose Water",
+    "title_ur": "پریمیم گلاب کا پانی",
+    "description_en": "Pure and natural rose water for skincare and aromatherapy benefits.",
+    "description_ur": "خالص اور قدرتی گلاب کا پانی جو جلد کی دیکھ بھال اور خوشبو کے فوائد کے لیے ہے۔",
+    "price": 1200,
+    "originalPrice": 1500,
+    "images": [
+      "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=600&h=600&fit=crop"
+    ],
+    "category_id": "6",
+    "stock": 50,
+    "featured": true,
+    "badges": [
+      { "type": "success", "label_en": "Natural", "label_ur": "قدرتی" },
+      { "type": "primary", "label_en": "Pure", "label_ur": "خالص" }
+    ],
+    "specifications": {
+      "Volume": "250ml",
+      "Type": "100% Natural",
+      "Origin": "Organic Roses",
+      "Use": "Face & Body"
+    },
+    "created_at": "2024-02-01T08:30:00Z"
+  },
+  {
+    "Id": 8,
+    "title_en": "Traditional Handwoven Carpet",
+    "title_ur": "روایتی ہاتھ سے بُنا ہوا قالین",
+    "description_en": "Beautiful handwoven carpet with traditional Pakistani patterns and designs.",
+    "description_ur": "خوبصورت ہاتھ سے بُنا ہوا قالین جس میں پاکستانی روایتی نقش و نگار ہے۔",
+    "price": 25000,
+    "originalPrice": 32000,
+    "images": [
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=600&fit=crop"
+    ],
+    "category_id": "3",
+    "stock": 5,
+    "featured": true,
+    "badges": [
+      { "type": "accent", "label_en": "Handmade", "label_ur": "ہاتھ سے بنا" },
+      { "type": "warning", "label_en": "Limited Stock", "label_ur": "محدود اسٹاک" }
+    ],
+    "specifications": {
+      "Size": "6x9 feet",
+      "Material": "100% Wool",
+      "Origin": "Lahore, Pakistan",
+      "Pattern": "Traditional Mughal"
+    },
+    "created_at": "2024-02-03T15:45:00Z"
+  },
+  {
+    "Id": 9,
+    "title_en": "Wireless Gaming Mouse",
+    "title_ur": "وائرلیس گیمنگ ماؤس",
+    "description_en": "High-precision wireless gaming mouse with RGB lighting and programmable buttons.",
+    "description_ur": "اعلیٰ صحت کے ساتھ وائرلیس گیمنگ ماؤس جس میں RGB لائٹنگ اور پروگرام ایبل بٹن ہیں۔",
+    "price": 4500,
+    "originalPrice": 4500,
+    "images": [
+      "https://images.unsplash.com/photo-1527814050087-3793815479db?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1563297007-0686c7d11ad4?w=600&h=600&fit=crop"
+    ],
+    "category_id": "1",
+    "stock": 22,
+    "featured": false,
+    "badges": [
+      { "type": "info", "label_en": "RGB", "label_ur": "RGB" },
+      { "type": "primary", "label_en": "Gaming", "label_ur": "گیمنگ" }
+    ],
+    "specifications": {
+      "DPI": "Up to 16000",
+      "Buttons": "8 Programmable",
+      "Battery": "70 hours",
+      "Connectivity": "2.4GHz Wireless"
+    },
+    "created_at": "2024-02-05T12:00:00Z"
+  },
+  {
+    "Id": 10,
+    "title_en": "Organic Honey Collection",
+    "title_ur": "آرگینک شہد کا مجموعہ",
+    "description_en": "Pure organic honey collection from different floral sources with natural health benefits.",
+    "description_ur": "خالص آرگینک شہد کا مجموعہ مختلف پھولوں سے حاصل کیا گیا جس میں قدرتی صحت کے فوائد ہیں۔",
+    "price": 3200,
+    "originalPrice": 4000,
+    "images": [
+      "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1472121989696-d2595cfc2b50?w=600&h=600&fit=crop"
+    ],
+    "category_id": "7",
+    "stock": 30,
+    "featured": true,
+    "badges": [
+      { "type": "success", "label_en": "Organic", "label_ur": "آرگینک" },
+      { "type": "accent", "label_en": "Sale", "label_ur": "سیل" }
+    ],
+    "specifications": {
+      "Weight": "3 x 250g jars",
+      "Types": "Acacia, Wildflower, Manuka",
+      "Origin": "Northern Areas",
+      "Purity": "100% Raw"
+    },
+    "created_at": "2024-02-08T10:15:00Z"
+  }
+]

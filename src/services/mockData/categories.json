@@ -1,0 +1,82 @@
+[
+  {
+    "Id": 1,
+    "name_en": "Electronics",
+    "name_ur": "الیکٹرانکس",
+    "description_en": "Latest gadgets, smartphones, laptops and electronic accessories",
+    "description_ur": "جدید ترین گیجٹس، اسمارٹ فونز، لیپ ٹاپ اور الیکٹرانک ایکسیسریز",
+    "icon": "Smartphone",
+    "parent_id": null,
+    "productCount": 125
+  },
+  {
+    "Id": 2,
+    "name_en": "Clothing & Fashion",
+    "name_ur": "کپڑے اور فیشن",
+    "description_en": "Traditional and modern clothing, accessories and fashion items",
+    "description_ur": "روایتی اور جدید کپڑے، اکسیسریز اور فیشن کی اشیاء",
+    "icon": "Shirt",
+    "parent_id": null,
+    "productCount": 89
+  },
+  {
+    "Id": 3,
+    "name_en": "Home & Garden",
+    "name_ur": "گھر اور باغ",
+    "description_en": "Furniture, home decor, garden tools and household essentials",
+    "description_ur": "فرنیچر، گھر کی سجاوٹ، باغبانی کے آلات اور گھریلو ضروریات",
+    "icon": "Home",
+    "parent_id": null,
+    "productCount": 67
+  },
+  {
+    "Id": 4,
+    "name_en": "Books & Education",
+    "name_ur": "کتابیں اور تعلیم",
+    "description_en": "Educational books, novels, religious texts and learning materials",
+    "description_ur": "تعلیمی کتابیں، ناول، مذہبی متن اور تعلیمی مواد",
+    "icon": "Book",
+    "parent_id": null,
+    "productCount": 156
+  },
+  {
+    "Id": 5,
+    "name_en": "Sports & Fitness",
+    "name_ur": "کھیل اور فٹنس",
+    "description_en": "Sports equipment, fitness gear and outdoor adventure items",
+    "description_ur": "کھیل کا سامان، فٹنس کا سامان اور بیرونی مہم جوئی کی اشیاء",
+    "icon": "Dumbbell",
+    "parent_id": null,
+    "productCount": 43
+  },
+  {
+    "Id": 6,
+    "name_en": "Beauty & Personal Care",
+    "name_ur": "خوبصورتی اور ذاتی نگہداشت",
+    "description_en": "Skincare, makeup, fragrances and personal care products",
+    "description_ur": "جلد کی دیکھ بھال، میک اپ، خوشبو اور ذاتی نگہداشت کی مصنوعات",
+    "icon": "Sparkles",
+    "parent_id": null,
+    "productCount": 78
+  },
+  {
+    "Id": 7,
+    "name_en": "Food & Grocery",
+    "name_ur": "کھانا اور گروسری",
+    "description_en": "Organic foods, spices, traditional snacks and grocery essentials",
+    "description_ur": "آرگینک کھانا، مصالحے، روایتی ناشتہ اور گروسری کی ضروریات",
+    "icon": "ShoppingBasket",
+    "parent_id": null,
+    "productCount": 234
+  },
+  {
+    "Id": 8,
+    "name_en": "Automotive",
+    "name_ur": "گاڑیوں کا سامان",
+    "description_en": "Car accessories, motorcycle parts and automotive maintenance items",
+    "description_ur": "کار کے اکسیسریز، موٹرسائیکل کے پارٹس اور گاڑیوں کی دیکھ بھال کی اشیاء",
+    "icon": "Car",
+    "parent_id": null,
+    "productCount": 92
+  }
+]

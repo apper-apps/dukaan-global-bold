@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'react-toastify/dist/ReactToastify.css';
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  transition: font-family 0.2s ease;
+}
+
+[dir="rtl"] {
+  font-family: 'Noto Sans Arabic', 'Noto Nastaliq Urdu', sans-serif;
+}
+
+/* Custom scrollbar for better design */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00A86B;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1A4B33;
+}
+
+/* RTL specific styles */
+[dir="rtl"] input {
+  text-align: right;
+}
+
+[dir="ltr"] input {
+  text-align: left;
+}
+
+/* Toast customization */
+.Toastify__toast-container {
+  width: 320px;
+}
+
+.Toastify__toast {
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.Toastify__toast--success {
+  background: linear-gradient(135deg, #28A745 0%, #20C997 100%);
+}
+
+.Toastify__toast--error {
+  background: linear-gradient(135deg, #DC3545 0%, #E74C3C 100%);
+}
+
+.Toastify__toast--info {
+  background: linear-gradient(135deg, #17A2B8 0%, #3498DB 100%);
+}
+
+.Toastify__toast--warning {
+  background: linear-gradient(135deg, #FFC107 0%, #F39C12 100%);
+}
+
+/* Animation classes */
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.3s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+/* Premium card hover effects */
+.product-card {
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 168, 107, 0.15);
+}
+
+/* Language direction transition */
+.dir-transition {
+  transition: all 0.3s ease;
+}
+
+/* Urdu number formatting */
+.urdu-numbers {
+  font-feature-settings: "locl";
+}
