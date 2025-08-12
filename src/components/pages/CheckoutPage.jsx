@@ -94,71 +94,79 @@ const CheckoutPage = () => {
                   {language === "ur" ? "بلنگ کی تفصیلات" : "Billing Details"}
                 </h2>
 
-                <div className="grid md:grid-cols-2 gap-6">
+<div className="grid md:grid-cols-2 gap-6">
                   <Input
+                    key="firstName-input"
                     label={t("firstName", language)}
                     name="firstName"
-                    value={formData.firstName}
+                    value={formData?.firstName || ''}
                     onChange={handleInputChange}
                     required
                   />
                   
                   <Input
+                    key="lastName-input"
                     label={t("lastName", language)}
                     name="lastName"
-                    value={formData.lastName}
+                    value={formData?.lastName || ''}
                     onChange={handleInputChange}
                     required
                   />
                   
                   <Input
+                    key="email-input"
                     label={t("email", language)}
                     name="email"
                     type="email"
-                    value={formData.email}
+                    value={formData?.email || ''}
                     onChange={handleInputChange}
                     required
                   />
                   
                   <Input
+                    key="phone-input"
                     label={t("phone", language)}
                     name="phone"
                     type="tel"
-                    value={formData.phone}
+                    value={formData?.phone || ''}
                     onChange={handleInputChange}
                     required
                   />
                   
                   <div className="md:col-span-2">
                     <Input
+                      key="address-input"
                       label={t("address", language)}
                       name="address"
-                      value={formData.address}
+                      value={formData?.address || ''}
                       onChange={handleInputChange}
                       required
                     />
                   </div>
                   
                   <Input
+                    key="city-input"
                     label={t("city", language)}
                     name="city"
-                    value={formData.city}
+                    value={formData?.city || ''}
                     onChange={handleInputChange}
                     required
                   />
                   
                   <Input
+                    key="state-input"
                     label={t("state", language)}
                     name="state"
-                    value={formData.state}
+                    value={formData?.state || ''}
                     onChange={handleInputChange}
                     required
                   />
                   
                   <Input
+                    key="zipCode-input"
                     label={t("zipCode", language)}
                     name="zipCode"
-                    value={formData.zipCode}
+                    value={formData?.zipCode || ''}
                     onChange={handleInputChange}
                     required
                   />
