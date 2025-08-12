@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import React from "react";
-import { ArrowRight, Globe, Heart, Search, ShoppingCart, Sparkles, Star } from "lucide-react";
+import { ArrowRight, Globe, Heart, Search, ShoppingCart, Sparkles, Star, Languages, Truck, Shield } from "lucide-react";
 import Button from "@/components/atoms/Button";
 import { t } from "@/utils/translations";
 
@@ -75,23 +75,27 @@ const HeroSection = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
               className="flex flex-wrap gap-6 pt-8"
-            >
-{[
+>
+              {[
                 { icon: "Languages", text: language === "ur" ? "دو زبانوں میں" : "Bilingual Support" },
                 { icon: "Truck", text: language === "ur" ? "تیز ڈیلیوری" : "Fast Delivery" },
                 { icon: "Shield", text: language === "ur" ? "محفوظ ادائیگی" : "Secure Payment" },
               ].map((feature, index) => {
-                const IconComponent = feature.icon === 'Star' ? Star :
+                const IconComponent = feature.icon === 'Languages' ? Languages :
+                                   feature.icon === 'Truck' ? Truck : 
+                                   feature.icon === 'Shield' ? Shield :
+                                   feature.icon === 'Star' ? Star :
                                    feature.icon === 'ShoppingCart' ? ShoppingCart : 
                                    feature.icon === 'Search' ? Search : Sparkles;
                 return (
-                <div key={index} className="flex items-center space-x-3 text-white/90">
-                  <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
-                    <IconComponent size={16} />
+                  <div key={index} className="flex items-center space-x-3 text-white/90">
+                    <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                      <IconComponent size={16} />
+                    </div>
+                    <span className="font-medium">{feature.text}</span>
                   </div>
-                  <span className="font-medium">{feature.text}</span>
-                </div>
-              ))}
+                );
+              })}
             </motion.div>
           </motion.div>
 
