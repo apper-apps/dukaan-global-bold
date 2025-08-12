@@ -40,8 +40,8 @@ const ProductGrid = ({ products, loading, error, onRetry }) => {
       animate="show"
       className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-6"
     >
-      {products.map((product) => (
-        <motion.div key={product.id} variants={item}>
+{products.map((product, index) => (
+        <motion.div key={product.id || `product-${index}`} variants={item}>
           <ProductCard product={product} />
         </motion.div>
       ))}
