@@ -76,13 +76,13 @@ const HomePage = () => {
           />
 
           <div className="text-center mt-12">
-            <Button
+<Button
               size="lg"
               onClick={() => navigate("/categories")}
               icon="ArrowRight"
               iconPosition="right"
             >
-              {language === "ur" ? "تمام مصنوعات دیکھیں" : "View All Products"}
+              {language === "ur" ? "تمام کیٹگری دیکھیں" : "View All Categories"}
             </Button>
           </div>
         </div>
@@ -140,13 +140,13 @@ const HomePage = () => {
                 </div>
               </div>
 
-              <Button
+<Button
                 size="lg"
                 variant="accent"
                 onClick={() => navigate("/deals")}
                 icon="Tag"
               >
-                {t("deals", language)} {language === "ur" ? "دیکھیں" : "View"}
+                {t("deals", language)} {language === "ur" ? "دیکھیں" : "View Deals"}
               </Button>
             </motion.div>
 

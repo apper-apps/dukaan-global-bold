@@ -1,20 +1,21 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
-import { addToCart } from "@/store/slices/cartSlice";
-import ApperIcon from "@/components/ApperIcon";
-import Button from "@/components/atoms/Button";
-import Badge from "@/components/atoms/Badge";
-import Loading from "@/components/ui/Loading";
-import Error from "@/components/ui/Error";
+import React, { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import { productService } from "@/services/api/productService";
-import { t } from "@/utils/translations";
-import { formatCurrency } from "@/utils/formatters";
 import { toast } from "react-toastify";
 import { motion } from "framer-motion";
+import ApperIcon from "@/components/ApperIcon";
+import Loading from "@/components/ui/Loading";
+import Error from "@/components/ui/Error";
+import Button from "@/components/atoms/Button";
+import Badge from "@/components/atoms/Badge";
+import { t } from "@/utils/translations";
+import { formatCurrency } from "@/utils/formatters";
+import { addToCart } from "@/store/slices/cartSlice";
 
 const ProductDetailPage = () => {
   const { productId } = useParams();
+  const navigate = useNavigate();
   const { language } = useSelector((state) => state.language);
   const dispatch = useDispatch();
   
@@ -44,9 +45,9 @@ const ProductDetailPage = () => {
     toast.success(t("addedToCart", language));
   };
 
-  const handleBuyNow = () => {
+const handleBuyNow = () => {
     dispatch(addToCart({ product, quantity }));
-    // Navigate to checkout would be implemented here
+    navigate("/checkout");
     toast.success(t("addedToCart", language));
   };
 

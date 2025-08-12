@@ -19,7 +19,7 @@ const Header = () => {
     }
   };
 
-  const navigationItems = [
+const navigationItems = [
     { key: "shop", path: "/", icon: "Home" },
     { key: "categories", path: "/categories", icon: "Grid3x3" },
     { key: "deals", path: "/deals", icon: "Tag" },
@@ -46,7 +46,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Search */}
-          <div className="hidden lg:block flex-1 max-w-2xl mx-8">
+<div className="hidden lg:block flex-1 max-w-2xl mx-8">
             <SearchBar onSearch={handleSearch} />
           </div>
 

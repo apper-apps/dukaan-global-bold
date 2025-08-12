@@ -1,14 +1,14 @@
-import { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { clearCart } from "@/store/slices/cartSlice";
+import { toast } from "react-toastify";
+import { motion } from "framer-motion";
+import ApperIcon from "@/components/ApperIcon";
 import Button from "@/components/atoms/Button";
 import Input from "@/components/atoms/Input";
 import { t } from "@/utils/translations";
 import { formatCurrency } from "@/utils/formatters";
-import { toast } from "react-toastify";
-import { motion } from "framer-motion";
-import ApperIcon from "@/components/ApperIcon";
+import { clearCart } from "@/store/slices/cartSlice";
 
 const CheckoutPage = () => {
   const { language } = useSelector((state) => state.language);
@@ -37,15 +37,27 @@ const CheckoutPage = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
+const handleSubmit = async (e) => {
     e.preventDefault();
     setIsProcessing(true);
+
+    // Calculate totals
+    const shippingCost = total > 2000 ? 0 : 200;
+    const tax = Math.round(total * 0.05);
+    const calculatedGrandTotal = total + shippingCost + tax;
 
     // Simulate order processing
     setTimeout(() => {
       dispatch(clearCart());
-      toast.success(t("orderPlaced", language));
-      navigate("/");
+      navigate("/order-success", { 
+        state: { 
+          orderDetails: {
+            items: items,
+            total: calculatedGrandTotal,
+            orderId: `ORD-${Date.now()}`
+          }
+        }
+      });
       setIsProcessing(false);
     }, 2000);
   };

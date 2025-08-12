@@ -20,6 +20,20 @@ class CategoryService {
     return { ...category };
   }
 
+  async getFeatured() {
+    await this.delay();
+    return mockCategories
+      .filter(c => c.featured)
+      .map(c => ({ ...c }));
+  }
+
+  async getPopular() {
+    await this.delay();
+    return mockCategories
+      .slice(0, 6)
+      .map(c => ({ ...c }));
+  }
+
   async create(categoryData) {
     await this.delay();
     const newId = Math.max(...mockCategories.map(c => c.Id)) + 1;
