@@ -1,10 +1,11 @@
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import Button from "@/components/atoms/Button";
-import { t } from "@/utils/translations";
 import { motion } from "framer-motion";
 import React from "react";
+import { ArrowRight, Search, ShoppingCart, Sparkles, Star } from "lucide-react";
+import Button from "@/components/atoms/Button";
 import Icon from "@/components/atoms/Icon";
+import { t } from "@/utils/translations";
 
 const HeroSection = () => {
   const { language } = useSelector((state) => state.language);
