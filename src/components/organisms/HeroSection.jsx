@@ -2,9 +2,8 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import React from "react";
-import { ArrowRight, Search, ShoppingCart, Sparkles, Star } from "lucide-react";
+import { ArrowRight, Globe, Heart, Search, ShoppingCart, Sparkles, Star } from "lucide-react";
 import Button from "@/components/atoms/Button";
-import Icon from "@/components/atoms/Icon";
 import { t } from "@/utils/translations";
 
 const HeroSection = () => {
@@ -77,14 +76,18 @@ const HeroSection = () => {
               transition={{ delay: 0.8 }}
               className="flex flex-wrap gap-6 pt-8"
             >
-              {[
+{[
                 { icon: "Languages", text: language === "ur" ? "دو زبانوں میں" : "Bilingual Support" },
                 { icon: "Truck", text: language === "ur" ? "تیز ڈیلیوری" : "Fast Delivery" },
                 { icon: "Shield", text: language === "ur" ? "محفوظ ادائیگی" : "Secure Payment" },
-].map((feature, index) => (
+              ].map((feature, index) => {
+                const IconComponent = feature.icon === 'Star' ? Star :
+                                   feature.icon === 'ShoppingCart' ? ShoppingCart : 
+                                   feature.icon === 'Search' ? Search : Sparkles;
+                return (
                 <div key={index} className="flex items-center space-x-3 text-white/90">
                   <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
-                    <Icon name={feature.icon} size={16} />
+                    <IconComponent size={16} />
                   </div>
                   <span className="font-medium">{feature.text}</span>
                 </div>
@@ -102,8 +105,8 @@ const HeroSection = () => {
             <div className="aspect-square bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
               <div className="w-full h-full bg-gradient-to-br from-white/20 to-white/5 rounded-2xl flex items-center justify-center">
 <div className="text-center space-y-6">
-                  <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto">
-                    <Icon name="Globe" size={48} className="text-white" />
+<div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto">
+                    <Globe size={48} className="text-white" />
                   </div>
                   <div className="space-y-2">
                     <h3 className="text-2xl font-bold">
@@ -122,15 +125,15 @@ const HeroSection = () => {
               animate={{ y: [-10, 10, -10] }}
               transition={{ duration: 4, repeat: Infinity }}
 className="absolute -top-6 -right-6 w-16 h-16 bg-accent rounded-full flex items-center justify-center"
-            >
-              <Icon name="Star" size={24} className="text-white" />
+>
+              <Star size={24} className="text-white" />
             </motion.div>
             <motion.div
               animate={{ y: [10, -10, 10] }}
               transition={{ duration: 3, repeat: Infinity, delay: 1 }}
 className="absolute -bottom-4 -left-4 w-12 h-12 bg-warning rounded-full flex items-center justify-center"
-            >
-              <Icon name="Heart" size={20} className="text-white" />
+>
+              <Heart size={20} className="text-white" />
             </motion.div>
           </motion.div>
         </div>
