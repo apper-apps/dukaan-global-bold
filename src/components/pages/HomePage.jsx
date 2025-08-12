@@ -1,17 +1,16 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import HeroSection from "@/components/organisms/HeroSection";
-import CategoryGrid from "@/components/organisms/CategoryGrid";
-import ProductGrid from "@/components/organisms/ProductGrid";
-import { setCategories, setError, setFeaturedProducts, setLoading, setProducts } from "@/store/slices/productsSlice";
 import { productService } from "@/services/api/productService";
 import { categoryService } from "@/services/api/categoryService";
-import { t } from "@/utils/translations";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import ProductGrid from "@/components/organisms/ProductGrid";
+import HeroSection from "@/components/organisms/HeroSection";
+import CategoryGrid from "@/components/organisms/CategoryGrid";
 import Button from "@/components/atoms/Button";
 import Icon from "@/components/atoms/Icon";
-import { useNavigate } from "react-router-dom";
-
+import { t } from "@/utils/translations";
+import { setCategories, setError, setFeaturedProducts, setLoading, setProducts } from "@/store/slices/productsSlice";
 const HomePage = () => {
   const { language } = useSelector((state) => state.language);
   const { products, categories, featuredProducts, loading, error } = useSelector((state) => state.products);
@@ -31,11 +30,12 @@ const HomePage = () => {
       dispatch(setProducts(productsData));
       dispatch(setCategories(categoriesData));
       dispatch(setFeaturedProducts(productsData.filter(p => p.featured).slice(0, 8)));
-    } catch (err) {
+} catch (err) {
       dispatch(setError("Failed to load homepage data"));
+    } finally {
+      dispatch(setLoading(false));
     }
   };
-
   useEffect(() => {
     loadData();
   }, []);
