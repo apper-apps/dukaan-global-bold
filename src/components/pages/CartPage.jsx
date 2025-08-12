@@ -60,8 +60,8 @@ const CartPage = () => {
               animate="show"
               className="space-y-4"
             >
-              {items.map((cartItem) => (
-                <motion.div key={cartItem.id} variants={item}>
+{items.map((cartItem, index) => (
+                <motion.div key={`${cartItem?.id || index}-${index}`} variants={item}>
                   <CartItem item={cartItem} />
                 </motion.div>
               ))}
